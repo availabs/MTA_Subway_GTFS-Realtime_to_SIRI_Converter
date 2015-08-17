@@ -1,5 +1,5 @@
 Not ready for prime time.
 
-Currently, the data for the MTA_Subway_GTFS_Toolkit must be manually downloaded and the scripts that parse it must run manually.
+Currently, the data for the MTA_Subway_GTFS_Toolkit node_module must be manually downloaded and the scripts that parse it must run manually.
 
 In otherwords, won't work without some assistance. 
