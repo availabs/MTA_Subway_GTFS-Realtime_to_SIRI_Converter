@@ -1,0 +1,49 @@
+The PresentableDistance field:
+  
+  The logic that determines whether stops or miles are shown 
+  in the PresentableDistance field is below:
+  
+      show distance in miles if and only if:
+          (distance in miles to _immediate next stop_ is > D) 
+          OR 
+          (distance in stops to current stop is > N AND distance in miles to current stop > E)
+
+          in other words, show distance in stops if and only if 
+              (distance in miles to _immediate next stop_ is <= D) 
+              AND 
+              (distance in stops to current stop <= N OR distance in miles to current stop <= E)
+
+      Show "approaching" if and only if:
+          distance_in_miles to immediate next stop < P
+
+      show "at stop" if and only if:
+          distance_in_miles to immediate next stop < T
+
+  Current Parameter Values:
+      Parameter	Value    
+          D	     0.5 miles
+          N	     3 stops
+          E	     0.5 miles
+          P	     500 feet
+          T	     100 feet
+
+TODO: Implement this.
+
+
+getDirectionRef 
+/* ???????????????????????????????????????????????????????????????????????????????????
+   I think this means always 0. Not the N or S bound directions, 
+   but a GTFS specific meaning. Always 0 for trains, it seems.
+   https://developers.google.com/transit/gtfs/reference?hl=en#trips_direction_id_field */
+
+
+
+/*  PJT: I don't think this applies.... all in GTFS empty.
+function getBlockRef (getParams) {
+    
+    From https://developers.google.com/transit/gtfs/reference#trips_block_id_field
+    The block_id field identifies the block to which the trip belongs. 
+    A block consists of two or more sequential trips made using the same vehicle, 
+    where a passenger can transfer from one trip to the next just by staying in the vehicle. 
+    The block_id must be referenced by two or more trips in trips.txt.
+*/

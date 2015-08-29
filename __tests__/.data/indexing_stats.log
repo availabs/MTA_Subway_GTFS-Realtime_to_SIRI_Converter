@@ -1,0 +1,61 @@
+
+============================== Statistics ================================
+	Simple Minimization Cases : 172
+	Least Squares Fit Cases   : 6
+============================================================================
+
+
+
+WARNING: Trip A20150614WKD_045000_GS.N04R required the least squares fitting algorithm.
+
+
+======================= Deviation Threshold Exceeded =======================
+Trip ID: A20150614WKD_045000_GS.N04R
+	Number of projected stops exceeding the deviation threshold : 2
+	Max deviation: 2402.308349743455 feet.
+============================================================================
+
+WARNING: Trip A20150614WKD_045350_GS.S04R required the least squares fitting algorithm.
+
+
+======================= Deviation Threshold Exceeded =======================
+Trip ID: A20150614WKD_045350_GS.S04R
+	Number of projected stops exceeding the deviation threshold : 2
+	Max deviation: 2402.308349743455 feet.
+============================================================================
+
+WARNING: Trip A20150614WKD_035000_GS.N01R required the least squares fitting algorithm.
+
+
+======================= Deviation Threshold Exceeded =======================
+Trip ID: A20150614WKD_035000_GS.N01R
+	Number of projected stops exceeding the deviation threshold : 2
+	Max deviation: 2402.308349743455 feet.
+============================================================================
+
+WARNING: Trip A20150614WKD_035350_GS.S01R required the least squares fitting algorithm.
+
+
+======================= Deviation Threshold Exceeded =======================
+Trip ID: A20150614WKD_035350_GS.S01R
+	Number of projected stops exceeding the deviation threshold : 2
+	Max deviation: 2402.308349743455 feet.
+============================================================================
+
+WARNING: Trip A20150614WKD_035500_GS.N03R required the least squares fitting algorithm.
+
+
+======================= Deviation Threshold Exceeded =======================
+Trip ID: A20150614WKD_035500_GS.N03R
+	Number of projected stops exceeding the deviation threshold : 2
+	Max deviation: 2402.308349743455 feet.
+============================================================================
+
+WARNING: Trip A20150614WKD_035850_GS.S03R required the least squares fitting algorithm.
+
+
+======================= Deviation Threshold Exceeded =======================
+Trip ID: A20150614WKD_035850_GS.S03R
+	Number of projected stops exceeding the deviation threshold : 2
+	Max deviation: 2402.308349743455 feet.
+============================================================================

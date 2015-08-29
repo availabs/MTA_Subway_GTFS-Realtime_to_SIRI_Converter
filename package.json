@@ -13,19 +13,23 @@
     "SIRI"
   ],
   "dependencies": {
-    "MTA_Subway_GTFS-Realtime_Toolkit": "https://github.com/availabs/MTA_Subway_GTFS-Realtime_Toolkit/tarball/master",
-    "MTA_Subway_GTFS_Toolkit": "https://github.com/availabs/MTA_Subway_GTFS_Toolkit/tarball/master",
     "async": "^1.4.2",
     "lodash": "^3.10.1",
     "protobufjs": "^4.0.0",
     "turf": "^2.0.2"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "jest --verbose"
+  },
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/availabs/MTA_Subway_GTFS-Realtime_to_SIRI_Converter.git"
   },
   "author": "paultomchik",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "jest": "^0.1.40",
+    "jest-cli": "^0.4.x"
+  }
 }
