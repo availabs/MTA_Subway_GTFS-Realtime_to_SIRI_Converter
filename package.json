@@ -13,6 +13,8 @@
     "SIRI"
   ],
   "dependencies": {
+    "MTA_Subway_GTFS-Realtime_Toolkit": "https://github.com/availabs/MTA_Subway_GTFS-Realtime_Toolkit/tarball/master",
+    "MTA_Subway_GTFS_Toolkit": "https://github.com/availabs/MTA_Subway_GTFS_Toolkit/tarball/master",
     "async": "^1.4.2",
     "lodash": "^3.10.1",
     "protobufjs": "^4.0.0",
