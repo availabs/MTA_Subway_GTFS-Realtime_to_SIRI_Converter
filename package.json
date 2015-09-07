@@ -32,6 +32,7 @@
   "license": "",
   "devDependencies": {
     "jest": "^0.1.40",
-    "jest-cli": "^0.4.x"
+    "jest-cli": "^0.4.x",
+    "jsonfile": "^2.2.1"
   }
 }

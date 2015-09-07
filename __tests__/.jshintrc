@@ -3,6 +3,7 @@
         "afterEach"  : false ,
         "beforeEach" : false ,
         "describe"   : false ,
+        "expect"     : false ,
         "it"         : false ,
         "it.only"    : false ,
         "jest"       : false ,
@@ -10,5 +11,6 @@
         "require"    : false ,
         "xdescribe"  : false ,
         "xit"        : false
-    }
+    },
+    "node" : true
 }
