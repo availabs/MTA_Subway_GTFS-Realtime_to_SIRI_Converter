@@ -47,3 +47,66 @@ function getBlockRef (getParams) {
     where a passenger can transfer from one trip to the next just by staying in the vehicle. 
     The block_id must be referenced by two or more trips in trips.txt.
 */
+
+
+
+/*
+Sample from the MTA SIRISituationExchangeDelivery documentation.
+<SituationExchangeDelivery>
+    <Situations>
+        <! One each per Service Alert->
+        <PtSituationElement>
+            <! Unique ID->
+
+          <SituationNumber>MTA NYCT_8d065d76-2813-46ee-b024-20f956232831</SituationNumber>
+            <! Information on temporal applicability of the service alert->
+
+          <PublicationWindow>
+                <! Start time of Service Alert->
+              <StartTime>2011-12-12T08:45:00-05:00</StartTime>
+                <! End time of Service Alert>
+              <EndTime>2011-12-13T08:45:00-05:00</StartTime>
+          </PublicationWindow>
+
+          <! Severity of the event>
+          <Severity>undefined</Severity>
+
+
+          <! Summary text>
+          <Summary xml:lang="EN">The B63 is having a party!</Summary>
+
+          <! Long description Text>
+          <Description xml:lang="EN">The B63 is having a party! (SMS)</Description>
+
+
+          <Affects>
+              <! Element containing VehicleJourney lines and directions>
+              <VehicleJourneys>
+                  <! One for each Line/Direction>
+                    <AffectedVehicleJourney>
+                      <! GTFS Route_ID, prefixed by agency_id>
+                        <LineRef>MTA NYCT_B63</LineRef>
+                      <! GTFS Route direction_id >
+                        <DirectionRef>1</DirectionRef>
+                    </AffectedVehicleJourney>
+
+                    <AffectedVehicleJourney>
+                        <LineRef>MTA NYCT_B63</LineRef>
+                      <! GTFS Opposite Route direction_id >
+                        <DirectionRef>0</DirectionRef>
+                    </AffectedVehicleJourney>
+              </VehicleJourneys>
+          </Affects>
+
+          <Consequences>
+              <Consequence>
+                  <! Service alert consequence: CANCELLED, NO_SERVICE, DISRUPTED, INTERMITTENT_SERVICE, DELAYED, DIVERTED etc>
+                    <Condition>altered</Condition>
+              </Consequence>
+          </Consequences>
+
+        </PtSituationElement>
+
+    </Situations>
+</SituationExchangeDelivery>
+*/

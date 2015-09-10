@@ -26,12 +26,12 @@ var fs       = require('fs')       ,
      */
     stopMonitoringRequestParams = {
         OperatorRef   : 'MTA'  ,
-        MonitoringRef : '101N' ,
-        LineRef       : '1'    ,
+        MonitoringRef : '239S' ,
+        LineRef       : '3'    ,
     },
 
     vehicleMonitoringRequestParams = {
-        VehicleRef   : '01 1759  SFY/242' ,
+        //VehicleRef   : '01 1759  SFY/242' ,
     };
 
 
@@ -45,13 +45,12 @@ describe('Simple GTFS-Realtime to SIRI Tests.', function() {
     });
 
     it('Build a Stop Monitoring Response.', function() {
-        //console.log(JSON.stringify(converter.getStopMonitoringResponse(stopMonitoringRequestParams, null, '    ')));
+        //console.log(JSON.stringify(converter.getStopMonitoringResponse(stopMonitoringRequestParams).response, null, '    '));
         expect(converter.getStopMonitoringResponse(stopMonitoringRequestParams)).toBeTruthy();
     });
 
     it('Build a Vehicle Monitoring Response.', function() {
-        //console.log(JSON.stringify(converter.getVehicleMonitoringResponse(vehicleMonitoringRequestParams, null, '    ')));
-        expect(converter.getVehicleMonitoringResponse(vehicleMonitoringRequestParams)).toBeTruthy();
+        expect(converter.getVehicleMonitoringResponse(vehicleMonitoringRequestParams).response).toBeTruthy();
     });
 });
 
