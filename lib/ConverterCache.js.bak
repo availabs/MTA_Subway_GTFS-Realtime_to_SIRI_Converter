@@ -7,8 +7,11 @@
 var util      = require('util')      ,
     async     = require('async')     ,
     jsontoxml = require('jsontoxml') ,
+    _         = require('lodash'),
 
     timeUtils = require('./utils/timeUtils');
+
+/* jshint unused: false, debug: true */
 
 // TODO
 // The SIRI SituationExchangeDelivery element only appears when there is a service alert 
@@ -21,6 +24,7 @@ var ConverterCache = function (converter) {
     var vehicleMonitoringResponse = converter.getCompleteVehicleMonitoringResponse(),
         vehicleActivity = vehicleMonitoringResponse.Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity,
         situationExchangeDelivery = vehicleMonitoringResponse.Siri.ServiceDelivery.SituationExchangeDelivery;
+
 
     this.validUntil = new Buffer(vehicleMonitoringResponse.Siri.ServiceDelivery.VehicleMonitoringDelivery.ValidUntil);
 
@@ -762,6 +766,8 @@ function buildResponse (requestedTrains,
                 offset += responseChunks.endResponse.copy(respBuffer, offset); 
                 toMemoize = [null, respBuffer];
 
+                if (offset !== respBuffer.length) { console.log('%%%%%%%%%%%%%%%%%%%%%%%%% Offset != buffer length %%%%%%%%%%%%%%%%%%%%%%%%'); }
+
             } catch (e) {
                 console.error(e.stack);
                 toMemoize = [e, null];
@@ -817,7 +823,7 @@ function getRequestedTrainsForVehicleMonitoringResponse (getParams) {
         next_fill_train,
         routes,
 
-        i;
+        i, ii;
 
     /* If either of these cases hold, the response would be empty. */
     if ((maxStopVisits === 0) || (operatorRef !== 'MTA')) { 
@@ -1469,5 +1475,4 @@ function bufferSituationExchange (converter, situationExchangeDelivery) {
 
 
 module.exports = ConverterCache;
-
 
