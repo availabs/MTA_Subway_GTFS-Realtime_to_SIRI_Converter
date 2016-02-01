@@ -7,7 +7,6 @@
  */
 
 module.exports = {
-    Converter                        : require('./lib/Converter.js')               ,
     ConverterStream                  : require('./lib/ConverterStream.js')         ,
 
     MTA_Subway_GTFS_Toolkit          : require('MTA_Subway_GTFS_Toolkit')          ,
