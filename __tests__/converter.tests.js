@@ -8,8 +8,8 @@ var fs       = require('fs')       ,
 
     gtfsConfig       = require('./.gtfsConfig')       ,
 
-    sampleGTFSIndexedScheduleDataPath = path.join(gtfsConfig.dataDirPath, gtfsConfig.indexedScheduleDataFileName) ,
-    sampleGTFSIndexedSpatialDataPath  = path.join(gtfsConfig.dataDirPath, gtfsConfig.indexedSpatialDataFileName)  ,
+    sampleGTFSIndexedScheduleDataPath = path.join(gtfsConfig.dataDirPath, gtfsConfig.indexedScheduleDataFilePath) ,
+    sampleGTFSIndexedSpatialDataPath  = path.join(gtfsConfig.dataDirPath, gtfsConfig.indexedSpatialDataFilePath)  ,
     sampleGTFSrtMessagePath           = path.join(__dirname, 'GTFS-Realtime_Sample.json')                         ,
 
     sampleGTFSIndexedScheduleData = jsonfile.readFileSync(sampleGTFSIndexedScheduleDataPath) ,
