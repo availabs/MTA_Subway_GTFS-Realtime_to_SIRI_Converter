@@ -15,12 +15,12 @@
   "dependencies": {
     "MTA_Subway_GTFS-Realtime_Toolkit": "https://github.com/availabs/MTA_Subway_GTFS-Realtime_Toolkit/tarball/master",
     "MTA_Subway_GTFS_Toolkit": "https://github.com/availabs/MTA_Subway_GTFS_Toolkit/tarball/master",
-    "async": "^1.5.1",
+    "async": "^2.0.0-rc.5",
     "connect-timeout": "^1.7.0",
     "json2xml": "^0.1.2",
     "jsontoxml": "0.0.11",
     "lodash": "^3.10.1",
-    "protobufjs": "^4.1.3",
+    "protobufjs": "^5.0.1",
     "turf": "^3.0.5"
   },
   "scripts": {
