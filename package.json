@@ -13,15 +13,14 @@
     "SIRI"
   ],
   "dependencies": {
-    "MTA_Subway_GTFS-Realtime_Toolkit": "https://github.com/availabs/MTA_Subway_GTFS-Realtime_Toolkit/tarball/master",
-    "MTA_Subway_GTFS_Toolkit": "https://github.com/availabs/MTA_Subway_GTFS_Toolkit/tarball/master",
-    "async": "^2.0.0-rc.5",
-    "connect-timeout": "^1.7.0",
-    "json2xml": "^0.1.2",
+    "MTA_Subway_GTFS-Realtime_Toolkit": "git+https://github.com/availabs/MTA_Subway_GTFS-Realtime_Toolkit.git",
+    "MTA_Subway_GTFS_Toolkit": "git+https://github.com/availabs/MTA_Subway_GTFS_Toolkit.git",
+    "async": "1.4.2",
+    "connect-timeout": "1.7.0",
     "jsontoxml": "0.0.11",
-    "lodash": "^3.10.1",
-    "protobufjs": "^5.0.1",
-    "turf": "^3.0.5"
+    "lodash": "3.10.1",
+    "protobufjs": "4.0.0",
+    "turf": "2.0.2"
   },
   "scripts": {
     "test": "jest --verbose"
